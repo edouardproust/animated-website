@@ -1,0 +1,245 @@
+/*
+ * Reset browser styles
+ */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+button {
+    background-color: none;
+    margin: none;
+    padding: none;
+    border: none;
+}
+
+a {
+    color: inherit;
+}
+
+/*
+ * Global
+ */
+
+body {
+    cursor: none;
+    position: relative;
+    background-color: white;
+    overflow-y: overlay;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    height: 300vh;
+}
+
+/*
+ * Nav, Main & Footer
+ */
+
+main {
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 20px 10%;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+}
+.nav-bg,
+.nav-content,
+.menu-container {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav-bg {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.nav-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.nav-content .logo a {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.4rem;
+    margin-left: 10px;
+}
+
+/*
+ * Titles
+ */
+
+h1, h2 {
+    font-weight: 400;
+    font-family: 'Abril Fatface', cursive;
+    margin-bottom: 30px;
+}
+h1, h1 * {
+    font-size: 4rem;
+    line-height: 4rem;
+    /* outline */
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+h2, h2 * {
+    font-size: 3rem;
+    line-height: 3.3rem;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
+}
+
+.text-light {
+    opacity: 0.5;
+}
+
+button {
+    transition: transform 0.3s ease-in-out
+}
+
+/* z-index */
+
+.cursor-custom {
+    z-index: 9;
+}
+nav {
+    z-index: 9;
+}
+.nav-content {
+    z-index: 10;
+}
+
+/* 
+ * Full page Menu
+ */
+
+.menu-hamburger {
+    height: 40px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+.menu-hamburger__line1,
+.menu-hamburger__line2 {
+    background-color: black;
+    height: 3px;
+    width: 30px;
+}
+.menu-hamburger__line2 {
+    margin-top: 6px;
+}
+
+.menu-container {
+    padding: 10%;
+    display: flex;
+    height: 100vh;
+    background-color: #333333;
+    color: white;
+    clip-path: circle(0% at 100% 0%)
+}
+.menu__container--links,
+.menu__container--descr {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.menu__container--links a {
+    width: 100%;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem !important;
+    line-height: 5rem;
+    transition: opacity 0.3s ease-in-out;
+}
+.menu__container--links * {
+    text-decoration: none;
+}
+.menu__container--links a:hover {
+    opacity: 0.5;
+}
+.menu__container--links a.separator {
+    margin-bottom: 30px;
+}
+.menu__container--links a.small {
+    font-size: 2rem !important;
+    line-height: 3.5rem;
+}
+.menu__container--links--separator {
+    border-bottom: solid 1px #555;
+    width: 20%;
+    margin: 30px auto 20px auto;
+}
+.menu__container--descr {
+    padding: 60px;
+    line-height: 1.5rem;
+    /* text-align: left; */
+}
+
+/* 
+ * Slides
+ */
+.scrollmagic-pin-spacer {
+    pointer-events: none !important;
+}
+.scrollmagic-pin-spacer > * {
+    pointer-events: all;
+}
+.slide {
+    padding: 140px 10%;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.title-container {
+    display: flex;
+}
+.title-container h1 {
+    margin: auto;
+}
+
+/*
+ * Title swipe
+ */
+
+.slide__title--container {
+    position: relative;
+}
+.slide__title--swipe {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0rem;
+    transform: translateY(0.3rem);
+    mix-blend-mode: lighten;
+}

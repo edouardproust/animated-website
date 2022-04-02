@@ -1,0 +1,76 @@
+.ss2 .slide__content {
+    flex: 1;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ss2 .slide__content--title {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.ss2 .slide__image {
+    position: relative;
+    flex: 1;
+}
+.ss2 .slide__image--container {
+    width: 100%;
+    height: 100%;
+}
+.ss2 .slide__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ss2 .slide__image--number{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 8rem;
+    line-height: 8rem;
+    color: white;
+}
+
+/* scroll to */
+
+.scrollto {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.scrollto__arrow  {
+    display: flex;
+    border: solid 1px black;
+    border-radius: 50%;
+    height: 100%;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.scrollto__arrow--line1,
+.scrollto__arrow--line2  {
+    width: 25px;
+    height: 1px;
+    background-color: black;
+}
+.scrollto__arrow--line1 {
+    transform: translateX(4px) rotate(45deg) ;
+}
+.scrollto__arrow--line2 {
+    transform: translateX(-4px) rotate(-45deg) ;
+}

@@ -1,0 +1,41 @@
+.ss1 .slide__image,
+.ss1 .slide__content {
+    position: relative;
+}
+.ss1 .slide__image--container {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.ss1 .slide__image {
+    flex: 2;
+}
+.ss1 .slide__content {
+    flex: 3;
+    margin-left: 40px;
+}
+.ss1 .slide__image--overlay,
+.ss1 .slide__content--overlay {
+    position: absolute;
+    top: -15%;
+    left: 0;
+    width: 100%;
+    height: 130%;
+    background-color: white;
+}
+
+.ss1 .slide__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ss1 .slide__content--button {
+   margin-top: 50px;
+}
+.ss1 .slide__content--btn-in {
+   background-color: black;
+   color: white;
+   height: 100%;
+   text-decoration: none;
+   padding: 15px 30px;
+}
